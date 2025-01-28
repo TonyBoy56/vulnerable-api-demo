@@ -24,14 +24,15 @@ vulnerable-flask-api/
 ├── requirements.txt         # Python dependencies
 ├── app/
 │   ├── __init__.py          # Initializes Flask app
-│   ├── routes.py            # API endpoints with vulnerabilities
+│   ├── api.py               # API endpoints with vulnerabilities
 │   ├── models.py            # Data models (if using a database)
 │   ├── utils.py             # Helper functions (e.g., input validation)
-│   ├── static/              # Static assets (optional)
-│   └── templates/           # HTML templates (if any)
+│   ├── config.py            # Configuration (DB, environment vars, etc.)
+<!-- │   ├── static/              # Static assets (optional) -->
+<!-- │   └── templates/           # HTML templates (if any) -->
 ├── tests/
-│   ├── __init__.py          # Initialize test package
-│   ├── test_routes.py       # Tests for API endpoints
+│   ├── __init__.py          # Test setup
+│   ├── test_api.py          # Unit tests for API endpoints
 │   └── test_security.py     # Tests for security features (e.g., hashed passwords)
 ├── .gitignore               # Ignore unnecessary files
 └── run.py                   # Entry point to run the app
