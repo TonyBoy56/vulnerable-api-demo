@@ -13,7 +13,7 @@
 # Environment variables and configuration files
 # .env
 # *.secret
-config.py
+# config.py
 
 # IDEs and editors
 .vscode/
